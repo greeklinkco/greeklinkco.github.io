@@ -29,8 +29,17 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="uq72Eafd"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '240212410932640',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v9.0'
+      });
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,11 +55,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-            <li>
-              <div class="fb-share-button" data-href="http://greeklink.co/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgreeklink.co%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <li style="margin-right: 13px">
+              <a class="facebookShare">
+                <div id="shareBtn">
+                  <i class="fab fa-facebook fa-2x"></i>
+                 Share
+                </div>
+              </a>
             </li>
              <li>
-              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I&#39;m ready for the launch of @greeklinkco! Sign up below to join me and sell your first item commission free." data-via="greeklinkco" data-hashtags="greeklink" data-related="greeklinkco" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a href="https://twitter.com/intent/tweet?text=I&#39;m%20ready%20for%20the%20launch%20of%20%40greeklinkco!%20Sign%20up%20below%20to%20join%20me%20and%20sell%20your%20first%20item%20commission-free!%20%23greeklink%20via%20%40greeklinkco%20%20http://greeklink.co/" target="_blank"><i class="fab fa-twitter fa-2x"></i>Tweet</a>
             </li>
        </ul>
       
