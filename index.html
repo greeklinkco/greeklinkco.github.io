@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="#"> 
+                <a id="shareBtn"> 
                     <i class="fab fa-facebook fa-2x"></i>
                       Share
                 </a>
@@ -47,12 +47,6 @@
                 <a href="#"> 
                     <i class="fab fa-twitter fa-2x"></i>
                       Tweet
-                </a>
-            </li>
-             <li>
-                <a href="mailto: sam@greeklink.co"> 
-                    <i class="fas fa-envelope fa-2x"></i>
-                      Email
                 </a>
             </li>
        </ul>
@@ -114,6 +108,10 @@
               </a>
             </div>
             <div class="bottomFooter">
+              <a href="mailto: sam@greeklink.co" style="color: white"> 
+                <i class="fas fa-envelope fa-2x"></i>
+                  Contact Us
+              </a>  
               <h5>&#169;  2021 - greeklink</h5>
               <h5>All rights reserved.</h5>
             </div>
@@ -124,8 +122,14 @@
  </body>
    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-   <script
-      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
-      data-auto-a11y="true"
-    ></script>
+   <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+   <script>
+    document.getElementById('shareBtn').onclick = function() {
+      FB.ui({
+        display: 'popup',
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/',
+      }, function(response){});
+    }
+    </script> 
 </html>
