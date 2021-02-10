@@ -1,1 +1,1 @@
-# [greeklink.co](https://greeklinkco.github.io/)
+# [greeklink.co](https://greeklink.co)
