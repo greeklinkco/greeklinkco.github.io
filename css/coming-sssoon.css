@@ -651,13 +651,14 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 .form-inline {
-    align-content: center;
+    text-align: center;
 }
 
 /*  Images  */
 
 .imgContainer {
     margin-top: 5%;
+    margin-bottom: 0;
 }
 
 .siteMockup {
@@ -715,3 +716,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     cursor: pointer;
 }
 
+
+.subGraphic {
+    margin-top: 0;
+}
